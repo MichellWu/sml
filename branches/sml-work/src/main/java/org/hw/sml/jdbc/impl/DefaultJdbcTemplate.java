@@ -158,6 +158,9 @@ public class DefaultJdbcTemplate extends JdbcTemplate  {
 			return result;
 		}
 		public int[] batchUpdate(String sql,List<Object[]> objs){
+			if(objs.size()==1){
+				return new int[]{update(sql, objs.get(0))};
+			}
 			Connection con=null;
 			PreparedStatement pst = null;
 			try {

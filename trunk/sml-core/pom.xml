@@ -7,7 +7,7 @@
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 	<groupId>org.hw.sml</groupId>
-	<artifactId>sml</artifactId>
+	<artifactId>sml-core</artifactId>
 	<packaging>jar</packaging>
 	<name>sml</name>
 	<description>sql markup language</description>
@@ -16,11 +16,6 @@
 			<id>hw-snapshots</id>
 			<name>hw-snapshots</name>
 			<url>http://23.247.25.117:8081/nexus/content/repositories/snapshots</url>
-		</repository>
-		<repository>
-			<id>com.ibm.mq</id>
-			<name>com.ibm.mq</name>
-			<url>https://mvnrepository.com/artifact/com.ibm/com.ibm.mq</url>
 		</repository>
 	</repositories>
 	<dependencies>
